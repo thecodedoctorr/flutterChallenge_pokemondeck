@@ -1,11 +1,9 @@
 import 'dart:developer';
 import 'dart:math';
-
 import 'package:flutter/material.dart';
 import '/models/card_model.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
-
 import '/models/pokemon.dart';
 
 class PokeProvider with ChangeNotifier {
@@ -14,7 +12,6 @@ class PokeProvider with ChangeNotifier {
   List<CardModel> pokeList = [];
   List<Pokemon> descList = [];
   Pokemon pokemon = Pokemon();
-
   Future<void> getHomeData() async {
     int pokeNumber = 100;
     List<CardModel> tempList = [];
